@@ -45,7 +45,7 @@ function GreetingsScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgb(12, 12, 12)',
+    backgroundColor: 'rgb(0, 2, 30)',
   },
   headerOne: {
     color: 'rgb(232, 215, 168)',

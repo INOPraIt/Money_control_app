@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import GreetingsScreen from './pages/GreetingsScreen';
 import RegisterScreen from './pages/RegisterScreen';
 import HomeScreen from './pages/HomeScreen';
+import SettingsScreen from './pages/SettingsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,7 +18,7 @@ export default function App() {
           options={{
             title: '',
             headerStyle: {
-              backgroundColor: 'rgb(12, 12, 12)',
+              backgroundColor: 'rgb(0, 2, 30)',
               boxShadow: 'none'
             },
             headerTintColor: '#fff',
@@ -33,7 +34,7 @@ export default function App() {
           options={{
             title: '',
             headerStyle: {
-              backgroundColor: 'rgb(12, 12, 12)',
+              backgroundColor: 'rgb(0, 2, 30)',
               boxShadow: 'none'
             },
             headerTintColor: '#fff',
@@ -49,7 +50,23 @@ export default function App() {
           options={{
             title: '',
             headerStyle: {
-              backgroundColor: 'rgb(12, 12, 12)',
+              backgroundColor: 'rgb(0, 2, 30)',
+              boxShadow: 'none'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontSize: 20,
+              fontWeight: 'bold',
+            },
+          }}
+          />
+          <Stack.Screen 
+          name="Settings" 
+          component={SettingsScreen} 
+          options={{
+            title: '',
+            headerStyle: {
+              backgroundColor: 'rgb(0, 2, 30)',
               boxShadow: 'none'
             },
             headerTintColor: '#fff',

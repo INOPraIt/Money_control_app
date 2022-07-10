@@ -3,6 +3,8 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 import { auth } from '../firebase';
 import CreditCard from "./components/CreditCard";
+import Charts from './components/Charts/Charts';
+
 
 function HomeScreen() {
   const navigation = useNavigation()
@@ -35,6 +37,9 @@ function HomeScreen() {
           >
           <Text style={styles.appButtonText}>Add Graph</Text>
         </TouchableOpacity>
+      </View>
+      <View>
+        <Charts />
       </View>
     </View>
   );
